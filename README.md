@@ -8,23 +8,32 @@ Criar um Api
 - [x] Instalar as dependências `npm i express nodemon cors axios`
 - [x] Criar uma rota para acessar a API
 - [x] Servir a API
-- [] Habilitar o CORS
-- [] Habilitar o nodemon para reiniciar o servidor
+- [x] Habilitar o CORS `Controle de Acesso do Navegador`
+- [x] Habilitar o nodemon para reiniciar o servidor
 
 ## Frontend
 
 Consumir API
 
-- [] Utilizar fetch para consumir nossa API backend
-- [] Explicar Promise - Async/Await
-- [] Usar try/catch
-- [] Mostrar a resposta na tela
+- [x] Utilizar fetch para consumir nossa API backend -> `npx lite-server`
+- [x] Explicar Promise - Async/Await
+- [x] Usar try/catch
+- [x] Mostrar a resposta na tela
 
 ## Backend
 
 Consumir API
 
-- [] jsonplaceholder
-- [] Usar axios
-- [] Semelhanças entre axios e fetch
-- [] Usar try/catch
+- [x] jsonplaceholder (https://jsonplaceholder.typicode.com/users)
+- [x] Usar axios
+- [x] Semelhanças entre axios e fetch
+- [x] Usar try/catch
+
+## Criar Projeto
+
+- npm install
+
+## Iniciar Aplicação
+
+- npm start
+- npx lite-server

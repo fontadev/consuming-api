@@ -6,8 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Consuming - API</title>
   </head>
-  <body></body>
+  <body>
+    <main></main>
+  </body>
   <script>
-    fetch("http://localhost:3050/");
+    async function getContent() {
+      try {
+        const response = await fetch("http://localhost:3050/");
+
+        const data = await response.json();
+
+        show(data);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+    getContent();
+
+    function show(users) {
+      let output = "";
+
+      for (let user of users) {
+        output += `<li>${user.name}</li>`;
+      }
+
+      document.querySelector("main").innerHTML = output;
+    }
   </script>
 </html>
